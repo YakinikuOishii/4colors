@@ -23,6 +23,42 @@ class ViewController: UIViewController {
     @IBOutlet var rightImage: UIImageView!
     @IBOutlet var leftImage: UIImageView!
     
+//    init(frame: CGRect) {
+//        self = super(frame: frame)
+//        if self {
+//            
+//        }
+//        return self
+//    }
+    
+//    required init?(coder aDecoder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+//    
+//     func hitTest(point: CGPoint, withEvent event: UIEvent?) -> UIView? {
+//        
+//        var hitView:UIView? = hitTest(point: point, withEvent: event)
+//        if (self == hitView){
+//            return nil
+//        }
+//        var image = self.topImage.image
+//        var data = image.alpha
+//        var scale = 1.0
+//        var screen = UIScreen.main
+//        if screen.respondsToSelector("scale") {
+//            scale = Double(screen.scale)
+//        }
+//        var index = (point.x + (point.y * (image?.size.width)!)) * scale
+//        if (data.bytes() as! UInt8)[index] == 0 {
+//            return nil
+//            // 当てはまったら下の画像に移る
+//        }
+//        //　上記に引っ掛からなかったら、そのままタップされる
+//        return UIView
+//    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
