@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Unr-e7-pJ0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M1h-FZ-vAD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,95 +21,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topFrame.png" translatesAutoresizingMaskIntoConstraints="NO" id="HwU-7g-4wN">
-                                <rect key="frame" x="112" y="133" width="150" height="150"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TE4-eg-dJh">
+                                <rect key="frame" x="127" y="185" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top.png" translatesAutoresizingMaskIntoConstraints="NO" id="zjy-zW-AWN">
-                                <rect key="frame" x="112" y="133" width="150" height="150"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGh-ti-nYu">
+                                <rect key="frame" x="127" y="313" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="iQv-60-4ls" appends="YES" id="Vkn-4H-yAI"/>
-                                </connections>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottom.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Do-vK-0ws">
-                                <rect key="frame" x="112" y="262" width="150" height="150"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7d-gL-L4V">
+                                <rect key="frame" x="255" y="313" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="gQx-Si-12o" appends="YES" id="aiD-RY-fGQ"/>
-                                </connections>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottomFrame.png" translatesAutoresizingMaskIntoConstraints="NO" id="GzI-Bs-bSh">
-                                <rect key="frame" x="112" y="273" width="150" height="150"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naH-vz-gpG">
+                                <rect key="frame" x="-1" y="313" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topFrame.png" translatesAutoresizingMaskIntoConstraints="NO" id="f3F-u3-sTx">
-                                <rect key="frame" x="38" y="258" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top.png" translatesAutoresizingMaskIntoConstraints="NO" id="yDw-F9-Kk0">
-                                <rect key="frame" x="38" y="258" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="f7e-Ey-wSq" appends="YES" id="IAL-3l-TBH"/>
-                                </connections>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topFrame.png" translatesAutoresizingMaskIntoConstraints="NO" id="3HB-X8-SkL">
-                                <rect key="frame" x="185" y="258" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="top.png" translatesAutoresizingMaskIntoConstraints="NO" id="EV8-mi-ymc">
-                                <rect key="frame" x="185" y="258" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="mqU-CK-M15" appends="YES" id="eho-Ic-6bm"/>
-                                </connections>
-                            </imageView>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                     </view>
-                    <connections>
-                        <outlet property="bottomImage" destination="7Do-vK-0ws" id="JdY-Hj-Jls"/>
-                        <outlet property="leftImage" destination="yDw-F9-Kk0" id="3Tg-Ec-gLb"/>
-                        <outlet property="rightImage" destination="EV8-mi-ymc" id="MEp-ue-Epd"/>
-                        <outlet property="topImage" destination="zjy-zW-AWN" id="rWD-So-pHO"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ICB-bd-1LR" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="iQv-60-4ls">
-                    <connections>
-                        <action selector="changeColor1" destination="Unr-e7-pJ0" id="bXN-6o-tq0"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="mqU-CK-M15">
-                    <connections>
-                        <action selector="changeColor2" destination="Unr-e7-pJ0" id="YCw-Y8-a8D"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="f7e-Ey-wSq">
-                    <connections>
-                        <action selector="changeColor3" destination="Unr-e7-pJ0" id="TnW-eG-QKt"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="gQx-Si-12o">
-                    <connections>
-                        <action selector="changeColor4" destination="Unr-e7-pJ0" id="mwo-Bv-hSp"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="130" y="64"/>
+            <point key="canvasLocation" x="128.80000000000001" y="63.418290854572717"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qX8-GR-Osf">
+            <objects>
+                <viewController id="M1h-FZ-vAD" customClass="ViewController" customModule="_colors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y6k-AZ-iQU"/>
+                        <viewControllerLayoutGuide type="bottom" id="nTd-Mu-0I9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eje-e1-xYm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snx-1l-Mmg" customClass="TriangleButton" customModule="_colors" customModuleProvider="target">
+                                <rect key="frame" x="60" y="123" width="112" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89146512749999995" green="0.22577646370000001" blue="0.37682056429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changecolor" destination="M1h-FZ-vAD" eventType="touchUpInside" id="Aho-nW-08J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5l8-5u-XSv" customClass="TriangleButton" customModule="_colors" customModuleProvider="target">
+                                <rect key="frame" x="221" y="158" width="102" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.89146512749999995" green="0.22577646370000001" blue="0.37682056429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changecolor" destination="M1h-FZ-vAD" eventType="touchUpInside" id="dOo-Kc-rOg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="snx-1l-Mmg" id="5Lb-TS-M6m"/>
+                        <outlet property="button2" destination="5l8-5u-XSv" id="Mhf-il-Mgf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAS-Rb-6uc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.60000000000002" y="63.418290854572717"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="bottom.png" width="1000" height="1000"/>
-        <image name="bottomFrame.png" width="1000" height="1000"/>
-        <image name="top.png" width="1000" height="1000"/>
-        <image name="topFrame.png" width="1000" height="1000"/>
-    </resources>
 </document>
