@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     
     var touchCuont: Int! = 0
     
+    // touchcountを保存　touchcountがボタンごとでバラバラだったら正解判定
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

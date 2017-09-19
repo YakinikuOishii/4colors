@@ -13,6 +13,7 @@ class TriangleButton: UIButton {
         super.init(frame: frame)
     }
     
+    
     var touchCount: Int! = 0
     
     required init?(coder aDecoder: NSCoder) {
@@ -43,26 +44,30 @@ class TriangleButton: UIButton {
         path.move(to: CGPoint(x:rect.width, y:0)) // 座標１
         path.addLine(to: CGPoint(x:rect.width, y:rect.height)) // 座標2
         path.addLine(to: CGPoint(x:0, y:rect.height)) // 座標3
-        path.close() // 座標間を閉じるc
+        path.close() // 座標間を閉じる
         return path
     }
     
-    func changecolor() {
+    private func changecolor() {
         touchCount = touchCount + 1
-        if touchCount == 1 {
-            TriangleButton.setTitleColor(UIColor.blue, for: .normal)
-        }else if touchCount == 2 {
-            TriangleButton.backgroundColor = UIColor.red
-        }else if touchCount == 3 {
-            TriangleButton.backgroundColor = UIColor.yellow
-        }else if touchCount == 4 {
-            TriangleButton.backgroundColor = UIColor.green
-        }else if touchCount >= 5 {
-            touchCount = 1
-            TriangleButton.backgroundColor = UIColor.blue
-        }else{
+        if touchCount % 10 == 2 {
+            backgroundColor = UIColor.blue
             
+        }else if touchCount % 10 == 4 {
+            backgroundColor = UIColor.red
+            
+        }else if touchCount % 10 == 6{
+            backgroundColor = UIColor.yellow
+            
+        }else if touchCount % 10 == 8 {
+            backgroundColor = UIColor.green
+            
+        }else if touchCount % 10 == 0{
+            touchCount = 2
+            backgroundColor = UIColor.blue
         }
+        print(touchCount)
+    }
 
     
     
@@ -72,6 +77,7 @@ class TriangleButton: UIButton {
             // タッチ領域外
             return nil
         } else {
+            changecolor()
             return super.hitTest(point, with: event)
         }
     }
