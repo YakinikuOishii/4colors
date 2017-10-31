@@ -14,13 +14,15 @@ class ViewController: UIViewController {
     
     @IBOutlet var button2: UIButton!
     
-    var testButton: TriangleButton!
+//    var testButton: TriangleButton!
     
     var tapLocation: CGPoint!
     
     var touchCuont: Int! = 0
     
-    // touchcountを保存　touchcountがボタンごとでバラバラだったら正解判定にしようとしたけど。。。？
+    var location: CGPoint!
+    
+    
     
     
     override func viewDidLoad() {
@@ -33,17 +35,31 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func getTouchLocation(_ sender: Any, for event: UIEvent) {
+        //　ボタンをUIViewに変換している　（変換することをキャストという）
+        let buttonView = sender as? UIView
+        let touch = event.touches(for: buttonView!)?.first
+        // inにはviewの型でないと入らない
+        location = (touch?.location(in: buttonView))!
+        print(location)
+        let buttonAsTriangle = button as? TriangleButton
+        let color = buttonAsTriangle?.getColor(pos: location).0
+        print(color!)
+        let alpha = buttonAsTriangle?.getColor(pos: location).1
+        print(alpha!)
+    }
+    
 //    func getLocation(sender: Any) {
 //        tapLocation = .location(in: testButton)
 //    }
 //    
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        let touch = touches.first
-        tapLocation = touch!.location(in: testButton)
-        print(tapLocation)
-    }
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        
+//        let touch = touches.first
+//        tapLocation = touch!.location(in: testButton)
+//        print(tapLocation)
+//    }
     
     //    @IBAction func changeColor() {
     //        let color = testButton.getColor(pos: CGPoint(dictionaryRepresentation: tapLocation as! CFDictionary)!)

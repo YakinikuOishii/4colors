@@ -14,17 +14,20 @@ class TriangleButton: UIButton {
     
     let pixelDataByteSize = 4
     
-    func getColor(pos: CGPoint) -> UIColor {
+    func getColor(pos: CGPoint) -> (UIColor,CGFloat) {
         
         // UIButtonのUIImage
         let imageData = self.imageView?.image?.cgImage?.dataProvider?.data!
         
         // 画像の中からRGBAのデータを抽出
         let data : UnsafePointer = CFDataGetBytePtr(imageData)
-        let scale = UIScreen.main.scale
+//        let scale = UIScreen.main.scale
         
         // タップされたピクセルがUIImageの中でどの位置なのか
-        let address: Int = ((Int)(self.imageView!.image!.size.width) * Int(pos.y * scale)) * pixelDataByteSize
+//        let address: Int = ((Int)(self.imageView!.image!.size.width) * Int(pos.y * scale)) * pixelDataByteSize
+        
+        // タップされたポイントが何個めのピクセルなのか
+        let address: Int = ((Int(self.imageView!.image!.size.width) * Int(pos.y)) + Int(pos.x)) * pixelDataByteSize
         
         // dataをRGBAに分解
         let r = CGFloat(data[address])
@@ -32,29 +35,29 @@ class TriangleButton: UIButton {
         let b = CGFloat(data[address+2])
         let a = CGFloat(data[address+3])
         
-        return UIColor(red: r, green: g, blue: b, alpha: a)
+        return (UIColor(red: r, green: g, blue: b, alpha: a), a)
     }
     
-    private func changecolor() {
-        touchCount = touchCount + 1
-        if touchCount == 1 {
-            backgroundColor = UIColor.blue
-            
-        }else if touchCount == 2 {
-            backgroundColor = UIColor.red
-            
-        }else if touchCount == 3 {
-            backgroundColor = UIColor.yellow
-            
-        }else if touchCount == 4 {
-            backgroundColor = UIColor.green
-            
-        }else if touchCount == 5 {
-            touchCount = 1
-            backgroundColor = UIColor.blue
-        }
-        print(touchCount)
-    }
+//    private func changecolor() {
+//        touchCount = touchCount + 1
+//        if touchCount == 1 {
+//            backgroundColor = UIColor.blue
+//            
+//        }else if touchCount == 2 {
+//            backgroundColor = UIColor.red
+//            
+//        }else if touchCount == 3 {
+//            backgroundColor = UIColor.yellow
+//            
+//        }else if touchCount == 4 {
+//            backgroundColor = UIColor.green
+//            
+//        }else if touchCount == 5 {
+//            touchCount = 1
+//            backgroundColor = UIColor.blue
+//        }
+//        print(touchCount)
+//    }
     
 }
 
