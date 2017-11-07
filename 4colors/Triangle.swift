@@ -36,28 +36,8 @@ class TriangleButton: UIButton {
         let a = CGFloat(data[address+3])
         
         return (UIColor(red: r, green: g, blue: b, alpha: a), a)
+        
     }
     
-//    private func changecolor() {
-//        touchCount = touchCount + 1
-//        if touchCount == 1 {
-//            backgroundColor = UIColor.blue
-//            
-//        }else if touchCount == 2 {
-//            backgroundColor = UIColor.red
-//            
-//        }else if touchCount == 3 {
-//            backgroundColor = UIColor.yellow
-//            
-//        }else if touchCount == 4 {
-//            backgroundColor = UIColor.green
-//            
-//        }else if touchCount == 5 {
-//            touchCount = 1
-//            backgroundColor = UIColor.blue
-//        }
-//        print(touchCount)
-//    }
     
 }
-
