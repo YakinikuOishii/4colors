@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     var location: CGPoint!
     
+    var alphaBool: Bool!
     
     
     
@@ -35,23 +36,34 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func getTouchLocation(_ sender: Any, for event: UIEvent) {
-        //　ボタンをUIViewに変換している　（変換することをキャストという）
-        var buttonView = sender as? UIView
-        let touch = event.touches(for: buttonView!)?.first
-        // inにはviewの型でないと入らない
-        location = (touch?.location(in: buttonView))!
-        print(location)
-        let buttonAsTriangle = sender as? TriangleButton
-        let color = buttonAsTriangle?.getColor(pos: location).0
-        print(color!)
-        let alpha = buttonAsTriangle?.getColor(pos: location).1
-        print(alpha!)
-        
-        if alpha == 0 {
-            buttonView = nil
-        }
-    }
+//    @IBAction func getTouchLocation(_ sender: Any, for event: UIEvent) {
+//        //　ボタンをUIViewに変換している　（変換することをキャストという）
+//        var buttonView = sender as? UIView
+//        let touch = event.touches(for: buttonView!)?.first
+//        // inにはviewの型でないと入らない
+//        location = (touch?.location(in: buttonView))!
+//        print(location)
+//        let buttonAsTriangle = sender as? TriangleButton
+//        let color = buttonAsTriangle?.getColor(pos: location).0
+//        print(color!)
+//        let alpha = buttonAsTriangle?.getColor(pos: location).1
+//        print(alpha!)
+//        test()
+//
+//        
+//        if alpha == 0 {
+//            buttonView = nil
+//            alphaBool = false
+////            button2
+//        } else {
+//            alphaBool = true
+//        }
+//    }
+//    
+//    func test(){
+//        print("わーい")
+//    }
+    
     
 //    func getLocation(sender: Any) {
 //        tapLocation = .location(in: testButton)
