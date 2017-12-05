@@ -18,7 +18,6 @@
 		59F321D61FA88D6700A40061 /* triangle2.png in Resources */ = {isa = PBXBuildFile; fileRef = 59F321D41FA88D6700A40061 /* triangle2.png */; };
 		59F8DE931F67E83E00120F25 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8DE921F67E83E00120F25 /* Triangle.swift */; };
 		59FB0E131FB1BEBA0024B73D /* greenTriangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FB0E121FB1BEBA0024B73D /* greenTriangle.png */; };
-		59FB0EA11FBAFB660024B73D /* TouchEventThroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FB0EA01FBAFB660024B73D /* TouchEventThroughView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +55,6 @@
 		59F321D41FA88D6700A40061 /* triangle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle2.png; sourceTree = "<group>"; };
 		59F8DE921F67E83E00120F25 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		59FB0E121FB1BEBA0024B73D /* greenTriangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenTriangle.png; sourceTree = "<group>"; };
-		59FB0EA01FBAFB660024B73D /* TouchEventThroughView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TouchEventThroughView.swift; path = ../TouchEventThroughView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +109,6 @@
 				59F321D31FA88D6700A40061 /* triangle.png */,
 				59F321D41FA88D6700A40061 /* triangle2.png */,
 				59F0FDB51F5EA60E0083E5D1 /* AppDelegate.swift */,
-				59FB0EA01FBAFB660024B73D /* TouchEventThroughView.swift */,
 				59F8DE921F67E83E00120F25 /* Triangle.swift */,
 				59F0FDB71F5EA60E0083E5D1 /* ViewController.swift */,
 				59F0FDB91F5EA60E0083E5D1 /* Main.storyboard */,
@@ -280,7 +277,6 @@
 				59F8DE931F67E83E00120F25 /* Triangle.swift in Sources */,
 				59F0FDB81F5EA60E0083E5D1 /* ViewController.swift in Sources */,
 				59F0FDB61F5EA60E0083E5D1 /* AppDelegate.swift in Sources */,
-				59FB0EA11FBAFB660024B73D /* TouchEventThroughView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

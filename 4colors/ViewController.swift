@@ -10,24 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var button : UIButton!
+    @IBOutlet var button : TriangleButton!
     
-    @IBOutlet var button2: UIButton!
+    @IBOutlet var button2: TriangleButton!
+    
+//    var touchCount: Int = 0
+//    @IBOutlet var touchEventThrough: TouchEventThroughView!
     
 //    var testButton: TriangleButton!
-    
-    var tapLocation: CGPoint!
-    
-    var touchCuont: Int! = 0
-    
-    var location: CGPoint!
-    
-    var alphaBool: Bool!
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        button.setImage(UIImage(named: "greenTriangle")?.withRenderingMode(.alwaysTemplate), for: .normal)
+        button2.setImage(UIImage(named: "triangle2")?.withRenderingMode(.alwaysTemplate), for: .normal)
+        
+        button.tintColor = UIColor.red
+        button2.tintColor = UIColor.red
         
 //        testButton.addTarget(self, action: #selector(ViewController.getLocation(sender: )), for: .touchDown)
         // Do any additional setup after loading the view, typically from a nib.
@@ -35,81 +33,20 @@ class ViewController: UIViewController {
         
         
     }
-    
-//    @IBAction func getTouchLocation(_ sender: Any, for event: UIEvent) {
-//        //　ボタンをUIViewに変換している　（変換することをキャストという）
-//        var buttonView = sender as? UIView
-//        let touch = event.touches(for: buttonView!)?.first
-//        // inにはviewの型でないと入らない
-//        location = (touch?.location(in: buttonView))!
-//        print(location)
-//        let buttonAsTriangle = sender as? TriangleButton
-//        let color = buttonAsTriangle?.getColor(pos: location).0
-//        print(color!)
-//        let alpha = buttonAsTriangle?.getColor(pos: location).1
-//        print(alpha!)
-//        test()
-//
-//        
-//        if alpha == 0 {
-//            buttonView = nil
-//            alphaBool = false
-////            button2
-//        } else {
-//            alphaBool = true
-//        }
-//    }
-//    
-//    func test(){
-//        print("わーい")
-//    }
-    
-    
-//    func getLocation(sender: Any) {
-//        tapLocation = .location(in: testButton)
-//    }
-//    
-    
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        
-//        let touch = touches.first
-//        tapLocation = touch!.location(in: testButton)
-//        print(tapLocation)
-//    }
-    
-    //    @IBAction func changeColor() {
-    //        let color = testButton.getColor(pos: CGPoint(dictionaryRepresentation: tapLocation as! CFDictionary)!)
-    //    }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func change(tappedButton: TriangleButton) {
+        tappedButton.changeColor()
+    }
     
-    //    @IBAction func changecolor(){
-    //        touchCuont = touchCuont + 1
-    //        if touchCuont == 1 {
-    //            button.backgroundColor = UIColor.blue
-    //            button2.backgroundColor = UIColor.blue
-    //        }else if touchCuont == 2 {
-    //            button.backgroundColor = UIColor.red
-    //            button2.backgroundColor = UIColor.red
-    //        }else if touchCuont == 3 {
-    //            button.backgroundColor = UIColor.yellow
-    //            button2.backgroundColor = UIColor.yellow
-    //        }else if touchCuont == 4 {
-    //            button.backgroundColor = UIColor.green
-    //            button2.backgroundColor = UIColor.green
-    //        }else if touchCuont >= 5 {
-    //            touchCuont = 1
-    //            button.backgroundColor = UIColor.blue
-    //            button2.backgroundColor = UIColor.blue
-    //        }else{
-    //            
-    //        }
+    // senderでどのボタンがタップされたか調べてくれる
     
-    
-    //    }
 }
+    
+
+
 
