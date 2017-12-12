@@ -20,42 +20,11 @@
                     <view key="view" contentMode="scaleToFill" id="eje-e1-xYm" customClass="TouchEventThroughView" customModule="_colors" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5l8-5u-XSv" customClass="TriangleButton" customModule="_colors" customModuleProvider="target">
-                                <rect key="frame" x="49" y="20" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="triangle2.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeWithTappedButton:" destination="M1h-FZ-vAD" eventType="touchUpInside" id="BCY-vK-yKK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snx-1l-Mmg" customClass="TriangleButton" customModule="_colors" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="greenTriangle.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeWithTappedButton:" destination="M1h-FZ-vAD" eventType="touchUpInside" id="1iA-Im-stK"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="button" destination="snx-1l-Mmg" id="5Lb-TS-M6m"/>
-                        <outlet property="button2" destination="5l8-5u-XSv" id="Mhf-il-Mgf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAS-Rb-6uc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-282.39999999999998" y="3.1484257871064472"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="greenTriangle.png" width="100" height="100"/>
-        <image name="triangle2.png" width="100" height="100"/>
-    </resources>
 </document>

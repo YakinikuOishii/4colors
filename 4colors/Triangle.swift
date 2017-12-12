@@ -14,6 +14,11 @@ class TriangleButton: UIButton {
     
     var location: CGPoint!
     
+    let color1 = UIColor(red: 0.839, green: 0.364, blue: 1.0, alpha: 1.0)
+    let color2 = UIColor(red: 0.568, green: 0.286, blue: 0.909, alpha: 1.0)
+    let color3 = UIColor(red: 0.466, green: 0.364, blue: 1.0, alpha: 1.0)
+    let color4 = UIColor(red: 0.286, green: 0.364, blue: 0.909, alpha: 1.0)
+    
     let pixelDataByteSize = 4
     
     func getColor(pos: CGPoint) -> (UIColor,CGFloat) {
@@ -56,16 +61,16 @@ class TriangleButton: UIButton {
     func changeColor () {
         touchCount = touchCount + 1
         if touchCount == 0 {
-            self.tintColor = UIColor.red
+            self.tintColor = color1
         }else if touchCount == 1 {
-            self.tintColor = UIColor.green
+            self.tintColor = color2
         }else if touchCount == 2 {
-            self.tintColor = UIColor.yellow
+            self.tintColor = color3
         }else if touchCount == 3 {
-            self.tintColor = UIColor.cyan
+            self.tintColor = color4
         }else if touchCount == 4 {
             touchCount = 0
-            self.tintColor = UIColor.red
+            self.tintColor = color1
         }
     }
     
